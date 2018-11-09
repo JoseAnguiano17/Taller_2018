@@ -1,16 +1,16 @@
 <html>
     <head>
-        <title>WebSocket Chat Client</title>
+        <title>Cliente de chat en Linea</title>
     </head>
     <body>
-        <h1>WebSocket Chat Client</h1>
+        <h1>Cliente de chat en Linea</h1>
         <p>
-            Host: <input id="webSocketHost" type="text" value="localhost:1234"/>
+            Sevidor: <input id="webSocketHost" type="text" value="localhost:1234"/>
         </p>
         <p>
-            <button onClick="initWebSocket();">Connect</button>
-            <button id="disconnectButton" onClick="stopWebSocket();" disabled>Disconnect</button>
-            <button onClick="checkSocket();">State</button>
+            <button onClick="initWebSocket();">Conectar</button>
+            <button id="disconnectButton" onClick="stopWebSocket();" disabled>Desconectar</button>
+            <button onClick="checkSocket();">Estado</button>
         </p>
         <p>
             <textarea id="debugTextArea" style="width:400px;height:200px;" readonly></textarea>
@@ -18,7 +18,7 @@
         <p>
             <input type="text" id="inputNick" value="nickname" />
             <input type="text" id="inputText" onkeydown="if(event.keyCode==13)sendMessage();"/>
-            <button id="sendButton" onClick="sendMessage();" disabled>Send</button>
+            <button id="sendButton" onClick="sendMessage();" disabled>Enviar</button>
         </p>
 		
 		<p> Los mensajes enviados se resiviran en tiempo real </p>
